@@ -28,10 +28,14 @@ docker container run \
     epynic/rds-mysql-s3-backup
 ```
 
-
 #### CRON - Runs Daily
 ```
 0 0 * * * docker container run -e AWS_ACCESS_KEY_ID=AKXXXXXXXXXXXXX -e AWS_SECRET_ACCESS_KEY=pSXXXXXXXXXXXXXX -e S3_BUCKET='XXXXXXXXXXXXX' -e MYSQL_HOST='mysql_endpoint' -e MYSQL_PWD='mysql_password' -e USER='mysql_username' -rm epynic/rds-mysql-s3-backup
 ```
+
+## Jenkins JobDSL
+A Free-style Jenkins Seed Job as a place to run the DSL scripts.
+DSL Script: [jobdsldocker.groovy](jobdsldocker.groovy)
+
 
 ##### :beer:
