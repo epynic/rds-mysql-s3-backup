@@ -13,7 +13,6 @@ job('test-ops-s3-rds-backup'){
             repositoryName('epynic/rds-mysql-s3-backup')
             tag('${GIT_REVISION,length=7}')
             registryCredentials('DockerHub')
-            forcePull(false)
             createFingerprints(false)
             skipDecorate()
         }
